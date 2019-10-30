@@ -1,6 +1,5 @@
 # ACIDRain: Concurrency-Related Attacks on Database-Backed Web Applications
 
-----
 
 ## 先验知识
 
