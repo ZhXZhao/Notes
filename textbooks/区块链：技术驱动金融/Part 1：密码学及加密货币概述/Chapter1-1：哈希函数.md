@@ -2,12 +2,17 @@
  * @Author: ZhXZhao
  * @Date: 2020-02-07 19:09:00
  * @LastEditors  : ZhXZhao
- * @LastEditTime : 2020-02-07 21:00:39
+ * @LastEditTime : 2020-02-07 22:00:25
  * @Description: 
  -->
 # 哈希函数
 
 ---
+- [哈希函数](#%e5%93%88%e5%b8%8c%e5%87%bd%e6%95%b0)
+  - [Feature1：碰撞阻力](#feature1%e7%a2%b0%e6%92%9e%e9%98%bb%e5%8a%9b)
+  - [Feature2：隐秘性](#feature2%e9%9a%90%e7%a7%98%e6%80%a7)
+  - [Feature3：谜题友好](#feature3%e8%b0%9c%e9%a2%98%e5%8f%8b%e5%a5%bd)
+  - [安全哈希算法（Secure Hash Algorithm 256, SHA-256）](#%e5%ae%89%e5%85%a8%e5%93%88%e5%b8%8c%e7%ae%97%e6%b3%95secure-hash-algorithm-256-sha-256)
 
 哈希函数的三个特性：
 
