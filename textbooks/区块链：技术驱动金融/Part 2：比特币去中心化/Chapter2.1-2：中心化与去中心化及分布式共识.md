@@ -2,13 +2,18 @@
  * @Author: ZhXZhao
  * @Date: 2020-02-08 16:22:47
  * @LastEditors  : ZhXZhao
- * @LastEditTime : 2020-02-08 16:52:51
+ * @LastEditTime : 2020-02-09 15:44:35
  * @Description: 
  -->
 # 中心化与去中心化及分布式共识
 
 ---
 
+- [中心化与去中心化及分布式共识](#%e4%b8%ad%e5%bf%83%e5%8c%96%e4%b8%8e%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e5%8f%8a%e5%88%86%e5%b8%83%e5%bc%8f%e5%85%b1%e8%af%86)
+  - [中心化与去中心化](#%e4%b8%ad%e5%bf%83%e5%8c%96%e4%b8%8e%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96)
+  - [分布式共识](#%e5%88%86%e5%b8%83%e5%bc%8f%e5%85%b1%e8%af%86)
+    - [不可能性结论](#%e4%b8%8d%e5%8f%af%e8%83%bd%e6%80%a7%e7%bb%93%e8%ae%ba)
+    - [打破传统假设](#%e6%89%93%e7%a0%b4%e4%bc%a0%e7%bb%9f%e5%81%87%e8%ae%be)
 
 ## 中心化与去中心化
 
