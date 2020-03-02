@@ -1,6 +1,23 @@
 # ACIDRain: Concurrency-Related Attacks on Database-Backed Web Applications
 
 
+- [ACIDRain: Concurrency-Related Attacks on Database-Backed Web Applications](#acidrain-concurrency-related-attacks-on-database-backed-web-applications)
+  - [先验知识](#%e5%85%88%e9%aa%8c%e7%9f%a5%e8%af%86)
+    - [数据库事务的四个特性(ACID)](#%e6%95%b0%e6%8d%ae%e5%ba%93%e4%ba%8b%e5%8a%a1%e7%9a%84%e5%9b%9b%e4%b8%aa%e7%89%b9%e6%80%a7acid)
+    - [并发操作带来的问题](#%e5%b9%b6%e5%8f%91%e6%93%8d%e4%bd%9c%e5%b8%a6%e6%9d%a5%e7%9a%84%e9%97%ae%e9%a2%98)
+    - [封锁](#%e5%b0%81%e9%94%81)
+    - [封锁协议](#%e5%b0%81%e9%94%81%e5%8d%8f%e8%ae%ae)
+    - [隔离等级](#%e9%9a%94%e7%a6%bb%e7%ad%89%e7%ba%a7)
+  - [正文](#%e6%ad%a3%e6%96%87)
+    - [提出问题](#%e6%8f%90%e5%87%ba%e9%97%ae%e9%a2%98)
+    - [提出方案](#%e6%8f%90%e5%87%ba%e6%96%b9%e6%a1%88)
+      - [构建抽象历史图](#%e6%9e%84%e5%bb%ba%e6%8a%bd%e8%b1%a1%e5%8e%86%e5%8f%b2%e5%9b%be)
+      - [根据非平凡环生成可能异常的API调用](#%e6%a0%b9%e6%8d%ae%e9%9d%9e%e5%b9%b3%e5%87%a1%e7%8e%af%e7%94%9f%e6%88%90%e5%8f%af%e8%83%bd%e5%bc%82%e5%b8%b8%e7%9a%84api%e8%b0%83%e7%94%a8)
+        - [限制](#%e9%99%90%e5%88%b6)
+      - [提炼证据(witness)](#%e6%8f%90%e7%82%bc%e8%af%81%e6%8d%aewitness)
+    - [评估](#%e8%af%84%e4%bc%b0)
+  - [一些想法](#%e4%b8%80%e4%ba%9b%e6%83%b3%e6%b3%95)
+
 ## 先验知识
 
 ### 数据库事务的四个特性(ACID)

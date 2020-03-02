@@ -1,8 +1,8 @@
 <!--
  * @Author: ZhXZhao
  * @Date: 2020-02-08 14:15:54
- * @LastEditors  : ZhXZhao
- * @LastEditTime : 2020-02-08 15:31:35
+ * @LastEditors: ZhXZhao
+ * @LastEditTime: 2020-03-01 17:14:06
  * @Description: 
  -->
 # 数字签名及公钥即身份
@@ -23,7 +23,7 @@
 > 数字签名方案由以下三个算法构成：
 > - (sk, pk) := generateKeys(keysize) generateKeys将keySize作为输入，输出一对公钥和私钥。私钥只有自己知道，用来签名一段消息，公钥人人可以看见，用来验证签名。
 > - sig := sign(sk, message) sign（签名）将消息和私钥作为输入，输出签名。
-> - isValid := verify(pk, message, sig) verify（验证）将消息、签名和公钥作为输出，输出若为真，则签名属实，若为假，则签名消息为假。
+> - isValid := verify(pk, message, sig) verify（验证）将消息、签名和公钥作为输入，输出若为真，则签名属实，若为假，则签名消息为假。
 > 两个性质要求：
 > - 有效签名可以通过验证，即：verify(pk, message, sign(sk, message)) == true
 > - 签名不可伪造。
