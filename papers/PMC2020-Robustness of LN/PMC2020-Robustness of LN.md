@@ -2,7 +2,7 @@
  * @Author: ZhXZhao
  * @Date: 2020-03-05 11:04:00
  * @LastEditors: ZhXZhao
- * @LastEditTime: 2020-03-06 23:53:24
+ * @LastEditTime: 2020-03-09 16:57:20
  * @Description: 
  -->
 
@@ -10,6 +10,26 @@
 
 ---
 
+- [On the robustness of Lightning Network in Bitcoin](#on-the-robustness-of-lightning-network-in-bitcoin)
+  - [先验知识](#%e5%85%88%e9%aa%8c%e7%9f%a5%e8%af%86)
+    - [连通图](#%e8%bf%9e%e9%80%9a%e5%9b%be)
+    - [社区网络](#%e7%a4%be%e5%8c%ba%e7%bd%91%e7%bb%9c)
+    - [节点中心性（centrality）度量](#%e8%8a%82%e7%82%b9%e4%b8%ad%e5%bf%83%e6%80%a7centrality%e5%ba%a6%e9%87%8f)
+  - [正文](#%e6%ad%a3%e6%96%87)
+  - [背景介绍](#%e8%83%8c%e6%99%af%e4%bb%8b%e7%bb%8d)
+  - [仿真模型](#%e4%bb%bf%e7%9c%9f%e6%a8%a1%e5%9e%8b)
+    - [攻击策略](#%e6%94%bb%e5%87%bb%e7%ad%96%e7%95%a5)
+      - [随机攻击](#%e9%9a%8f%e6%9c%ba%e6%94%bb%e5%87%bb)
+      - [高degree攻击](#%e9%ab%98degree%e6%94%bb%e5%87%bb)
+      - [高中心性攻击](#%e9%ab%98%e4%b8%ad%e5%bf%83%e6%80%a7%e6%94%bb%e5%87%bb)
+      - [基于社区的攻击](#%e5%9f%ba%e4%ba%8e%e7%a4%be%e5%8c%ba%e7%9a%84%e6%94%bb%e5%87%bb)
+    - [防御策略](#%e9%98%b2%e5%be%a1%e7%ad%96%e7%95%a5)
+      - [随机防御](#%e9%9a%8f%e6%9c%ba%e9%98%b2%e5%be%a1)
+      - [优先防御](#%e4%bc%98%e5%85%88%e9%98%b2%e5%be%a1)
+      - [平衡防御](#%e5%b9%b3%e8%a1%a1%e9%98%b2%e5%be%a1)
+    - [网络配置](#%e7%bd%91%e7%bb%9c%e9%85%8d%e7%bd%ae)
+  - [仿真结果](#%e4%bb%bf%e7%9c%9f%e7%bb%93%e6%9e%9c)
+  - [思考](#%e6%80%9d%e8%80%83)
 
 ## 先验知识
 
