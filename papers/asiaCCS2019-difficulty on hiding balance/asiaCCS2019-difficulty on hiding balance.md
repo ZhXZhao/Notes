@@ -2,8 +2,8 @@
  * @Author: ZhXZhao
  * @Date: 2020-04-02 21:42:55
  * @LastEditors: ZhXZhao
- * @LastEditTime: 2020-04-03 00:19:12
- * @Description: 
+ * @LastEditTime: 2020-06-03 20:41:42
+ * @Description:
  -->
 
 # On the Difficulty of Hiding the Balance of Lightning Network Channels
@@ -23,6 +23,10 @@
 为执行攻击，M需要与A开启一个通道。一个天真的方案是：逐步增加M经由A支付到B的金额，直到支付错误的发生。那么最后一个正确执行的金额可以认为是A的余额$balance_{AB}$，然后通过$balance_{BA}=C_{AB}-balance_{AB}$得到B的余额。
 但这样的攻击会耗费大量的财力，所以做出了改进。
 M每次会经由A路由到B一个无效的支付：M会创建一个假的invoice和哈希值h(x)，假装是由B创建的，这个假的invoice只能被B识别而不能被A识别。*注意：要想使这个攻击成功，有一个条件是$balance_{MA} \geq balance_{AB}$*。这个攻击也可以扩展成M去揭露A与其他每一个节点间建立的通道中的双方余额。其条件仍是$balance_{MA} \geq balance_{AB_i}$。
+
+### invoice
+
+invoice包括支付金额、目的节点的公钥（即地址）、哈希值和来自收款人的invoice签名。
 
 ### 攻击实现
 
