@@ -2,7 +2,7 @@
  * @Author: ZhXZhao
  * @Date: 2020-09-12 16:05:49
  * @LastEditors: ZhXZhao
- * @LastEditTime: 2020-09-12 18:00:23
+ * @LastEditTime: 2020-09-12 20:14:59
  * @Description:
 -->
 # Flare: An Approach to Routing in Lightning Network
@@ -48,4 +48,4 @@ Flare分为两个阶段：主动阶段和被动阶段。
 
 Flare会主动收集这些静态信息。
 
-![Flare描述图](pic/../Flare%20description.png)
+![Flare描述图](pic/Flare%20description.png)
