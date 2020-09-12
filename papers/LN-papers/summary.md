@@ -2,12 +2,12 @@
  * @Author: ZhXZhao
  * @Date: 2020-09-01 11:29:26
  * @LastEditors: ZhXZhao
- * @LastEditTime: 2020-09-01 21:42:48
+ * @LastEditTime: 2020-09-11 21:23:43
  * @Description: file content
 -->
 # 闪电网络中存在的问题
 
-闪电网络中仍存在几方面的问题：安全和并发性问题、隐私问题、路由问题以及效率问题。
+闪电网络中仍存在几方面的问题：安全和并发性问题、隐私问题、路由问题、效率问题以及网络的鲁棒性问题。
 
 ## 安全和并发性问题
 
@@ -24,10 +24,14 @@
 
 **交易金额隐私**（value privacy）：当一个支付涉及的用户都是诚实的时候，支付路径外的恶意用户是无法知晓任何有关支付金额的信息的。（详见论文《Concurrency and Privacy with Payment-Channel Networks》）
 
-**关系隐私**（sender/receiver anonymity）：当有两个交易通过同一条支付路径进行路由时，当支付路径中至少有一个诚实的中间节点时，恶意的中间节点无法以大于1/2的概率区分出$(s_i,r_i)$，即无法确定交易是哪个发送者发给哪个接收者。（详见论文《Concurrency and Privacy with Payment-Channel Networks》）
+**关系隐私**（sender/receiver anonymity）：当有两个交易通过同一条支付路径进行路由时，当支付路径中至少有一个诚实的中间节点时，恶意的中间节点无法以大于1/2的概率确定一笔交易的发送者和接收者$(s_i,r_i)$，即无法确定交易是哪个发送者发给哪个接收者。（详见论文《Concurrency and Privacy with Payment-Channel Networks》）
 
 **通道余额隐私**：论文《On the Difficulty of Hiding the Balance of Lightning Network Channels》中提出了一种揭露闪电网络中通道余额的攻击方法。
 
 ## 路由问题
 
 路由效率低，路由带来的通信开销大、路由路径不是最优的。（详见论文《Settling Payments Fast and Private: Efficient Decentralized Routing for Path-Based Transactions》）
+
+## 鲁棒性问题
+
+
