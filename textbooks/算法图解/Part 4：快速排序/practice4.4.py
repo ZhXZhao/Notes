@@ -2,7 +2,7 @@
 Author: ZhXZhao
 Date: 2020-10-22 16:17:04
 LastEditors: ZhXZhao
-LastEditTime: 2020-10-22 22:02:48
+LastEditTime: 2020-10-24 16:31:26
 Description:
 '''
 
@@ -19,7 +19,7 @@ Description:
 #     else:
 #         return None
 
-
+# 二分搜索
 def b_s(list, item, start=0, end=0):
     if start <= end:
         mid = (end-start) // 2 + start
