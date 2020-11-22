@@ -2,7 +2,7 @@
  * @Author: ZhXZhao
  * @Date: 2020-07-30 10:23:46
  * @LastEditors: ZhXZhao
- * @LastEditTime: 2020-07-31 19:45:51
+ * @LastEditTime: 2020-11-18 19:40:33
  * @Description:
 -->
 
@@ -52,7 +52,7 @@ VOUTE就是利用Embedding来进行路由的。VOUTE更新生成树不是周期�
 - 与现有的PBT网络不兼容。
 - VOUTE只考虑了无向图和无权边的情况，而实际上PBT网络是有向带权图。
 - VOUTE只考虑了节点动态的加入和离开，但是在PBT网络中，最主要的动态变化是边的权值变化。
-- BOUTE没有处理并发问题。
+- VOUTE没有处理并发问题。
 
 ## 本文的方案
 
