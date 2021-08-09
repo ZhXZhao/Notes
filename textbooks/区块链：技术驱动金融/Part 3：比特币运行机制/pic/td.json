@@ -1,0 +1,43 @@
+{
+    "hash": "a94b2c7ea033ed9e1c593f4882e9295bddf0085756fd4bd0f37099fe2c479a4f",
+    "size": 222,
+    "ver": 2,
+    "lock_time": 2063337,
+    "vin_sz": 1,
+    "vout_sz": 2,
+    "inputs": [
+        {
+            "prev_hash": "9b0be3e4bebe0cb7b0d4f02c3de92f57a9e249176e8d287844c58258a3ad8daf",
+            "output_index": 1,
+            "output_value": 885720,
+            "sequence": 4294967294,
+            "addresses": [
+                "tb1qqzu0mz0ynvnrhremrjp092qhue6v5sn6f453fy"
+            ],
+            "script_type": "pay-to-witness-pubkey-hash",
+            "age": 2063338,
+            "witness": [
+                "304402205243dbcc3de7172a4f683dddd60f61903daba2538e86526e7d5f0a2c7fa5efbf0220256b2043540374a2107a156d8efc1c7274af73665c5a6c81c788616cd6bbecdb01",
+                "030498f101e9b5dc290ba49bf0fffca5e7253dd3c23409c3fcbf8409d2749ac00c"
+            ]
+        }
+    ],
+    "outputs": [
+        {
+            "value": 875579,
+            "script": "0014ffe6e999534aaaa3bd2fcf9c4ac4c837e30fd10e",
+            "addresses": [
+                "tb1qllnwnx2nf24280f0e7wy43xgxl3sl5gw00hjpk"
+            ],
+            "script_type": "pay-to-witness-pubkey-hash"
+        },
+        {
+            "value": 10000,
+            "script": "0014873403c658bac39e12a847a5504b298919bb8b8c",
+            "addresses": [
+                "tb1qsu6q83jchtpeuy4gg7j4qjef3yvmhzuvz7xcrr"
+            ],
+            "script_type": "pay-to-witness-pubkey-hash"
+        }
+    ]
+}
